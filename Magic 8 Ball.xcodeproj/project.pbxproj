@@ -12,7 +12,57 @@
 		14C61E0120481205003EF739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C61DFF20481205003EF739 /* Main.storyboard */; };
 		14C61E0320481205003EF739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C61E0220481205003EF739 /* Assets.xcassets */; };
 		14C61E0620481205003EF739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C61E0420481205003EF739 /* LaunchScreen.storyboard */; };
+		14C61E13204CFB07003EF739 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C61E11204CFB07003EF739 /* Interface.storyboard */; };
+		14C61E15204CFB07003EF739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C61E14204CFB07003EF739 /* Assets.xcassets */; };
+		14C61E1C204CFB07003EF739 /* Magic 8 Ball - WathKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14C61E1B204CFB07003EF739 /* Magic 8 Ball - WathKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14C61E21204CFB07003EF739 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C61E20204CFB07003EF739 /* InterfaceController.swift */; };
+		14C61E23204CFB07003EF739 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C61E22204CFB07003EF739 /* ExtensionDelegate.swift */; };
+		14C61E25204CFB07003EF739 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C61E24204CFB07003EF739 /* NotificationController.swift */; };
+		14C61E27204CFB07003EF739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14C61E26204CFB07003EF739 /* Assets.xcassets */; };
+		14C61E2C204CFB07003EF739 /* Magic 8 Ball - WathKit.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 14C61E0F204CFB07003EF739 /* Magic 8 Ball - WathKit.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14C61E1D204CFB07003EF739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C61DF020481205003EF739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C61E1A204CFB07003EF739;
+			remoteInfo = "Magic 8 Ball - WathKit Extension";
+		};
+		14C61E2A204CFB07003EF739 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14C61DF020481205003EF739 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14C61E0E204CFB07003EF739;
+			remoteInfo = "Magic 8 Ball - WathKit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14C61E32204CFB07003EF739 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14C61E1C204CFB07003EF739 /* Magic 8 Ball - WathKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C61E34204CFB07003EF739 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				14C61E2C204CFB07003EF739 /* Magic 8 Ball - WathKit.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		14C61DF820481205003EF739 /* Magic 8 Ball.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic 8 Ball.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +72,28 @@
 		14C61E0220481205003EF739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14C61E0520481205003EF739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14C61E0720481205003EF739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C61E0F204CFB07003EF739 /* Magic 8 Ball - WathKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Magic 8 Ball - WathKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C61E12204CFB07003EF739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		14C61E14204CFB07003EF739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14C61E16204CFB07003EF739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C61E1B204CFB07003EF739 /* Magic 8 Ball - WathKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Magic 8 Ball - WathKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14C61E20204CFB07003EF739 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		14C61E22204CFB07003EF739 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		14C61E24204CFB07003EF739 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		14C61E26204CFB07003EF739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14C61E28204CFB07003EF739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C61E29204CFB07003EF739 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		14C61DF520481205003EF739 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C61E18204CFB07003EF739 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				14C61DFA20481205003EF739 /* Magic 8 Ball */,
+				14C61E10204CFB07003EF739 /* Magic 8 Ball - WathKit */,
+				14C61E1F204CFB07003EF739 /* Magic 8 Ball - WathKit Extension */,
 				14C61DF920481205003EF739 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				14C61DF820481205003EF739 /* Magic 8 Ball.app */,
+				14C61E0F204CFB07003EF739 /* Magic 8 Ball - WathKit.app */,
+				14C61E1B204CFB07003EF739 /* Magic 8 Ball - WathKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +136,29 @@
 			path = "Magic 8 Ball";
 			sourceTree = "<group>";
 		};
+		14C61E10204CFB07003EF739 /* Magic 8 Ball - WathKit */ = {
+			isa = PBXGroup;
+			children = (
+				14C61E11204CFB07003EF739 /* Interface.storyboard */,
+				14C61E14204CFB07003EF739 /* Assets.xcassets */,
+				14C61E16204CFB07003EF739 /* Info.plist */,
+			);
+			path = "Magic 8 Ball - WathKit";
+			sourceTree = "<group>";
+		};
+		14C61E1F204CFB07003EF739 /* Magic 8 Ball - WathKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14C61E20204CFB07003EF739 /* InterfaceController.swift */,
+				14C61E22204CFB07003EF739 /* ExtensionDelegate.swift */,
+				14C61E24204CFB07003EF739 /* NotificationController.swift */,
+				14C61E26204CFB07003EF739 /* Assets.xcassets */,
+				14C61E28204CFB07003EF739 /* Info.plist */,
+				14C61E29204CFB07003EF739 /* PushNotificationPayload.apns */,
+			);
+			path = "Magic 8 Ball - WathKit Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +169,51 @@
 				14C61DF420481205003EF739 /* Sources */,
 				14C61DF520481205003EF739 /* Frameworks */,
 				14C61DF620481205003EF739 /* Resources */,
+				14C61E34204CFB07003EF739 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				14C61E2B204CFB07003EF739 /* PBXTargetDependency */,
 			);
 			name = "Magic 8 Ball";
 			productName = "Magic 8 Ball";
 			productReference = 14C61DF820481205003EF739 /* Magic 8 Ball.app */;
 			productType = "com.apple.product-type.application";
+		};
+		14C61E0E204CFB07003EF739 /* Magic 8 Ball - WathKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C61E33204CFB07003EF739 /* Build configuration list for PBXNativeTarget "Magic 8 Ball - WathKit" */;
+			buildPhases = (
+				14C61E0D204CFB07003EF739 /* Resources */,
+				14C61E32204CFB07003EF739 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14C61E1E204CFB07003EF739 /* PBXTargetDependency */,
+			);
+			name = "Magic 8 Ball - WathKit";
+			productName = "Magic 8 Ball - WathKit";
+			productReference = 14C61E0F204CFB07003EF739 /* Magic 8 Ball - WathKit.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		14C61E1A204CFB07003EF739 /* Magic 8 Ball - WathKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14C61E31204CFB07003EF739 /* Build configuration list for PBXNativeTarget "Magic 8 Ball - WathKit Extension" */;
+			buildPhases = (
+				14C61E17204CFB07003EF739 /* Sources */,
+				14C61E18204CFB07003EF739 /* Frameworks */,
+				14C61E19204CFB07003EF739 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Magic 8 Ball - WathKit Extension";
+			productName = "Magic 8 Ball - WathKit Extension";
+			productReference = 14C61E1B204CFB07003EF739 /* Magic 8 Ball - WathKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +226,14 @@
 				ORGANIZATIONNAME = "Timco Collaborations Inc. LLC";
 				TargetAttributes = {
 					14C61DF720481205003EF739 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					14C61E0E204CFB07003EF739 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					14C61E1A204CFB07003EF739 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +253,8 @@
 			projectRoot = "";
 			targets = (
 				14C61DF720481205003EF739 /* Magic 8 Ball */,
+				14C61E0E204CFB07003EF739 /* Magic 8 Ball - WathKit */,
+				14C61E1A204CFB07003EF739 /* Magic 8 Ball - WathKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +270,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14C61E0D204CFB07003EF739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C61E15204CFB07003EF739 /* Assets.xcassets in Resources */,
+				14C61E13204CFB07003EF739 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C61E19204CFB07003EF739 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C61E27204CFB07003EF739 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +299,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14C61E17204CFB07003EF739 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14C61E25204CFB07003EF739 /* NotificationController.swift in Sources */,
+				14C61E23204CFB07003EF739 /* ExtensionDelegate.swift in Sources */,
+				14C61E21204CFB07003EF739 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14C61E1E204CFB07003EF739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C61E1A204CFB07003EF739 /* Magic 8 Ball - WathKit Extension */;
+			targetProxy = 14C61E1D204CFB07003EF739 /* PBXContainerItemProxy */;
+		};
+		14C61E2B204CFB07003EF739 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14C61E0E204CFB07003EF739 /* Magic 8 Ball - WathKit */;
+			targetProxy = 14C61E2A204CFB07003EF739 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		14C61DFF20481205003EF739 /* Main.storyboard */ = {
@@ -158,6 +339,14 @@
 				14C61E0520481205003EF739 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		14C61E11204CFB07003EF739 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14C61E12204CFB07003EF739 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -300,6 +489,80 @@
 			};
 			name = Release;
 		};
+		14C61E2D204CFB07003EF739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D356RKZQX;
+				IBSC_MODULE = "Magic_8_Ball___WathKit_Extension";
+				INFOPLIST_FILE = "Magic 8 Ball - WathKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Timco.Magic-8-Ball.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		14C61E2E204CFB07003EF739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D356RKZQX;
+				IBSC_MODULE = "Magic_8_Ball___WathKit_Extension";
+				INFOPLIST_FILE = "Magic 8 Ball - WathKit/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Timco.Magic-8-Ball.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		14C61E2F204CFB07003EF739 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D356RKZQX;
+				INFOPLIST_FILE = "Magic 8 Ball - WathKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Timco.Magic-8-Ball.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		14C61E30204CFB07003EF739 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7D356RKZQX;
+				INFOPLIST_FILE = "Magic 8 Ball - WathKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Timco.Magic-8-Ball.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -317,6 +580,24 @@
 			buildConfigurations = (
 				14C61E0B20481205003EF739 /* Debug */,
 				14C61E0C20481205003EF739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C61E31204CFB07003EF739 /* Build configuration list for PBXNativeTarget "Magic 8 Ball - WathKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C61E2F204CFB07003EF739 /* Debug */,
+				14C61E30204CFB07003EF739 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14C61E33204CFB07003EF739 /* Build configuration list for PBXNativeTarget "Magic 8 Ball - WathKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14C61E2D204CFB07003EF739 /* Debug */,
+				14C61E2E204CFB07003EF739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
